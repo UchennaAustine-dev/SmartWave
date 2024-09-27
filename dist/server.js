@@ -47,6 +47,28 @@ app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 app.use(errorHandler_1.errorHandler); // Error handling middleware
 app.use("/uploads", express_1.default.static("uploads")); // Serve uploaded images
+// Define the default GET route
+app.get("/", (req, res) => {
+    res.status(200).json({
+        message: "Welcome to the API!",
+        endpoints: {
+            auth: "/auth",
+            users: "/api/users",
+            payments: "/api/payments",
+            vendors: "/api/vendors",
+            affiliates: "/api/affiliates",
+            subscriptions: "/subscription",
+            transactions: "/api/transactions",
+            products: "/api/products",
+            business: "/business",
+            earnings: "/api/earnings",
+            withdrawals: "/withdrawal",
+            referrals: "/api/referrals",
+            purchases: "/api/purchases",
+        },
+    });
+});
+// Register routes
 app.use("/auth", authRoutes_1.default);
 app.use("/api", userRoutes_1.default);
 app.use("/api/payments", paymentRoutes_1.default);
