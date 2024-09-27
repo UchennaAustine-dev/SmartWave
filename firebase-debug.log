@@ -1,0 +1,24 @@
+[debug] [2024-09-13T19:48:45.323Z] ----------------------------------------------------------------------
+[debug] [2024-09-13T19:48:46.937Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Uchenna\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-13T19:48:46.939Z] CLI Version:   13.16.0
+[debug] [2024-09-13T19:48:46.944Z] Platform:      win32
+[debug] [2024-09-13T19:48:46.945Z] Node Version:  v20.10.0
+[debug] [2024-09-13T19:48:47.003Z] Time:          Fri Sep 13 2024 20:48:46 GMT+0100 (West Africa Standard Time)
+[debug] [2024-09-13T19:48:47.005Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-13T19:48:47.151Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-09-13T19:48:53.458Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-13T19:48:53.460Z] > authorizing via signed-in user (uchennaaustine8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Uchenna\Documents\SmartWave
+
+[debug] [2024-09-13T19:49:03.303Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-09-13T19:49:03.305Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
