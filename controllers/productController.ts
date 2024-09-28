@@ -64,16 +64,12 @@ export const addProductController = async (req: Request, res: Response) => {
     // Add product to the database
     const productId = await addProduct(productData);
 
-    // Optionally, update the user's products array if the admin approves the product
-    // await updateUserProducts(userId, productId);
-
     res.status(201).json({ message: "Product added successfully.", productId });
   } catch (error: any) {
     console.error("Error adding product:", error);
     res.status(500).json({
       error: "Failed to add product. Please try again later.",
       errorMessage: error.message,
-      errorStack: error,
     });
   }
 };

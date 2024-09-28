@@ -20,6 +20,7 @@ const affiliateRoutes_1 = __importDefault(require("./routes/affiliateRoutes"));
 const transactionsRoutes_1 = __importDefault(require("./routes/transactionsRoutes"));
 const earningsRoutes_1 = __importDefault(require("./routes/earningsRoutes"));
 const paymentRoutes_1 = __importDefault(require("./routes/paymentRoutes"));
+const cloudRoute_1 = __importDefault(require("./routes/cloudRoute"));
 dotenv_1.default.config();
 // Validate environment variables
 const requiredEnvVars = [
@@ -82,6 +83,7 @@ app.use("/api/earnings", earningsRoutes_1.default);
 app.use("/withdrawal", withdrawalRoutes_1.default);
 app.use("/api/referrals", referralRoutes_1.default);
 app.use("/api/purchases", purchaseRoutes_1.default);
+app.use("/api/cloudinary", cloudRoute_1.default);
 const server = app.listen(port, () => {
     console.clear();
     console.log(`Server is up and running \n Listening to Server on port: ${port}`);

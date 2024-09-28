@@ -52,8 +52,6 @@ const addProductController = (req, res) => __awaiter(void 0, void 0, void 0, fun
         console.log(productData);
         // Add product to the database
         const productId = yield (0, productModel_1.addProduct)(productData);
-        // Optionally, update the user's products array if the admin approves the product
-        // await updateUserProducts(userId, productId);
         res.status(201).json({ message: "Product added successfully.", productId });
     }
     catch (error) {
@@ -61,7 +59,6 @@ const addProductController = (req, res) => __awaiter(void 0, void 0, void 0, fun
         res.status(500).json({
             error: "Failed to add product. Please try again later.",
             errorMessage: error.message,
-            errorStack: error,
         });
     }
 });

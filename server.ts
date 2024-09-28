@@ -15,6 +15,7 @@ import affiliateRoutes from "./routes/affiliateRoutes";
 import transactionsRoutes from "./routes/transactionsRoutes";
 import earningsRoutes from "./routes/earningsRoutes";
 import paymentRoutes from "./routes/paymentRoutes";
+import cloudinaryRoutes from "./routes/cloudRoute";
 
 dotenv.config();
 
@@ -85,6 +86,7 @@ app.use("/api/earnings", earningsRoutes);
 app.use("/withdrawal", withdrawalRoutes);
 app.use("/api/referrals", referralRoutes);
 app.use("/api/purchases", purchaseRoutes);
+app.use("/api/cloudinary", cloudinaryRoutes);
 
 const server = app.listen(port, () => {
   console.clear();
